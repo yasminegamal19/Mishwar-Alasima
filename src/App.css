@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: hsl(218, 94%, 26%);
+    --secondary-color: #00C8FD;
+    --field-color: #CCE8FD;
+    --backGround-color: #E9F2F8;
+    --text-color: #777;
+}

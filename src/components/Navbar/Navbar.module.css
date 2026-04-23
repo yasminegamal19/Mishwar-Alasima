@@ -1,0 +1,156 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #eee;
+    transition: 0.3s;
+}
+
+.sticky {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    height: 80px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo {
+    height: 48px;
+    width: 48px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #777;
+    font-weight: 700;
+}
+
+.navLinks {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.navLink {
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    transition: 0.3s;
+    color: #000;
+    font-size: 17px;
+}
+
+.navLink:hover {
+    color: var(--main-color);
+}
+
+.navLink::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background: var(--main-color);
+    transition: 0.3s;
+}
+
+.navLink:hover::after {
+    width: 100%;
+}
+
+.active {
+    color: var(--main-color);
+    font-weight: 800;
+}
+
+.btn {
+    background: linear-gradient(135deg, var(--main-color), var(--secondary-color));
+    color: white;
+    padding: 8px 20px;
+    border-radius: 999px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.menuBtn {
+    display: none;
+    background: none;
+    border: none;
+}
+
+.mobileMenu {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    width: 260px;
+    height: calc(100vh - 80px);
+    background: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transform: translateX(100%);
+    transition: 0.3s ease;
+    z-index: 999;
+}
+
+.showMenu {
+    transform: translateX(0);
+}
+
+.mobileLink {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 998;
+}
+
+@media (max-width: 768px) {
+
+    .navLinks,
+    .btn {
+        display: none;
+    }
+
+    .menuBtn {
+        display: block;
+    }
+}
