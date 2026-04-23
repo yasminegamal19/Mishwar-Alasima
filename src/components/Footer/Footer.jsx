@@ -80,7 +80,7 @@ export default function Footer() {
       </div>
 
       <div className={styles.bottom}>
-        © {new Date().getFullYear()} مشوار العاصمة. جميع الحقوق محفوظة.
+        © 2026 {new Date().getFullYear()}  برمجة تك. جميع الحقوق محفوظة.
       </div>
     </footer>
   );
