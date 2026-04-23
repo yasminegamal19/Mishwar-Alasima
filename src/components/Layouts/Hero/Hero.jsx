@@ -19,7 +19,7 @@ export default function Hero() {
         <div className={styles.overlay} />
       </div>
 
-      <div className={`container ${styles.content}`}>
+      <div className={`container ${styles.content} overflow-hidden`}>
         <div className={`row align-items-center g-5`}>
           <div className="col-lg-7">
             <div className={styles.badge}>

@@ -1,9 +1,7 @@
 .hero {
     position: relative;
-    overflow: hidden;
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
+    overflow-x: clip;
+    overflow-y: hidden;
 }
 .wrapper {
     position: absolute;
@@ -27,6 +25,7 @@
     z-index: 1;
     padding-top: 80px;
     padding-bottom: 80px;
+    overflow-x: hidden ;
 }
 .badge {
     display: inline-flex;
@@ -153,6 +152,8 @@
 }
 
 .phoneCard {
+    transform: rotate(3deg);
+    max-width: 100%;
     position: relative;
     background: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(20px);
@@ -160,7 +161,6 @@
     border-radius: 40px;
     padding: 12px;
     box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
-    transform: rotate(3deg);
     transition: transform 0.7s ease;
 }
 
@@ -169,12 +169,13 @@
 }
 
 .phoneImg {
+    max-width: 100%;
     width: 280px;
     height: auto;
     border-radius: 32px;
     display: block;
 }
-@media (max-width: 576px) {
+@media (max-width: 720px) {
     .statsRow {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
