@@ -9,9 +9,12 @@
     --backGround-color: #E9F2F8;
     --text-color: #777;
 }
-html,
-body {
+html {
     overflow-x: hidden;
-    width: 100%;
-    max-width: 100%;
+}
+
+body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    position: relative;
 }
