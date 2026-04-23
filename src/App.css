@@ -9,3 +9,6 @@
     --backGround-color: #E9F2F8;
     --text-color: #777;
 }
+body {
+    overflow-x: hidden;
+}

@@ -47,7 +47,7 @@ export default function AppShowcase() {
 
         <div className="row g-4">
           {screens.map((s) => (
-            <div key={s.title} className="col-6 col-xl-3">
+            <div key={s.title} className="col-12 col-xl-3">
               <div
                 className={`${styles.screenItem} ${s.offset ? styles.offset : ""}`}
               >
