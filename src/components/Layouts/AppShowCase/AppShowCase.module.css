@@ -42,6 +42,7 @@
 }
 
 .phoneFrame {
+    margin-top: 10px;
     width: 250px;
     position: relative;
     border-radius: 28px;
